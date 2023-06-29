@@ -6,16 +6,17 @@
   </head>   
    <body>     
 	 <h1>COLEGIO</h1>
-	 <form action="login" method="post">
+	 <form action="login" method="post" class="formLogin">
 		 <h3>Ingresar Correo Electronico</h3>
 		 <input type="text" placeholder="Email" name="correo">
 		 <h3>Ingresar Contraseña</h3>
 		 <input type="text" placeholder="Password" name="clave">
 		 <br>
-		 <input type="radio" name="rol" id="rol" value="preceptor">Preceptor
-		 <input type="radio" name="rol" id="rol" value="padre">Padre
-		 <br>
 		 <button type="submit">Log in</button>
 	 </form>
+	 <br>
+	 <p class="message">
+		{{ message }}
+	 </p>
 	</body>
 </html>

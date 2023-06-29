@@ -6,17 +6,21 @@
   </head>   
    <body>     
 	 <h1>COLEGIO</h1>
-     <h3>Inasistencias</h3>
-     <tbody>
-        {% for i in inasistencias %}
-          <tr>
-            <td>{{i.1}}</td>
-            <td>{{i.2}}</td>
-            <td>{{i.3}}</td>
-            <td>{{i.1}}</td>
-            <td>{{i.5}}</td>
-          </tr>
+   <div class="listado">
+     <h3>Inasistencias!</h3>
+     <div>
+       {% for i in inasistencias %}
+       <div class="item">
+         <p>Fecha: {{i.fecha}}</p>
+         <p>Codigo de Clase: {{i.codigoClase}}</p>
+         <p>Id de estudiante: {{i.estudiante_id}}</p>
+         <p>Asistio: {{i.asistio}}</p>
+         <p>Justificacion: {{i.justificacion}}</p>
+        </div>
+        <br>
+        <br>
         {% endfor %}
-     </tbody>
+      </div>
+    </div>
     </body>
 </html>

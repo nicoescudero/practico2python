@@ -6,20 +6,28 @@
   </head>   
    <body>     
 	 <h1>COLEGIO</h1>
-	 <nav>
+	 <nav class="nav">
 		<form action="listado" method="get">
-			<button type="submit">Inasistencias</button>
+			<button type="submit">Listado de Inasistencias</button>
 		</form>
 	 </nav>
 	 <form action="asistencia" method="post" class="form">
+		<label for="fecha">Fecha</label>
 		<input type="date" placeholder="Fecha" name="fecha">
+		<label for="codigo">Codigo de Clase</label>
 		<input type="number" placeholder="codigo clase" name="codigo">
+		<label for="estudianteID">Id de Estudiante</label>
 		<input type="number" placeholder="id de estudiante" name="estudianteID">
 		<label for="asistio">Asistio a clase</label>
-		<input type="radio" name="asistio" id="asistio" value="si">si
-		<input type="radio" name="asistio" id="asistio" value="no">no
+		<div class="radioOptions">
+			<input type="radio" name="asistio" id="asistio" value="si">si
+			<input type="radio" name="asistio" id="asistio" value="no">no
+		</div>
 		<input type="text" placeholder="justificacion" name="justificacion">
-		<button type="submit">Registrar</button>
+		<button type="submit">Registrar Asistencia</button>
 	</form>
+	<p>
+		{{ message }}
+	 </p>
 	</body>
 </html>

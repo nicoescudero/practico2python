@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+  font-family: 'Inter', sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #464;
 }
 
@@ -14,7 +17,6 @@ header {
 }
 
 h1 { 
-	font-family: serif; 
 	text-align: center;
 	color: #377ba8; 
 }
@@ -106,10 +108,96 @@ th, td {
 	margin-right: 4em;
   text-align: center;
 }
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  background: #55555579;
+  width: 40%;
+  margin: 10px auto;
+  padding: 10px;
+  justify-content: center;
+}
+.nav > form > button{
+  padding: 5px;
+  background: inherit;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.nav > form > button:hover{
+  cursor: pointer;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  transition: 0.7s;
+}
+
 .form{
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 30px;
+  padding: 10px;
   border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
+  text-align: left;
+  align-items: center;
+}
+.form > input{
+  margin: 10px;
+  width: 60%;
+}
+
+.form > button{
+  width: 20%;
+  background: transparent;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.radioOptions{
+  display: flex;
+  flex-direction: row;
+}
+
+.formLogin{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 30px;
+  margin: 10px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.formLogin > button{
+  width: 20%;
+  background: transparent;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+.formLogin > input{
+  width: 40%;
+}
+
+.message{
+  text-align: center;
+  color: red;
+}
+
+.listado{
+  width: 50%;
+  margin: 10px auto;
+  color: #000;
+  padding: 5px;
+}
+.item{
+  display: flex;
+  flex-direction: row;
 }
