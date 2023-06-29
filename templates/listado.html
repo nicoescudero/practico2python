@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+    <title>Aplicación</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  </head>   
+   <body>     
+	 <h1>COLEGIO</h1>
+     <h3>Inasistencias</h3>
+     <tbody>
+        {% for i in inasistencias %}
+          <tr>
+            <td>{{i.1}}</td>
+            <td>{{i.2}}</td>
+            <td>{{i.3}}</td>
+            <td>{{i.1}}</td>
+            <td>{{i.5}}</td>
+          </tr>
+        {% endfor %}
+     </tbody>
+    </body>
+</html>
